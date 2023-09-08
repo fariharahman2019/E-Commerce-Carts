@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
 
 const SignUp = () => {
   const [fullName, setFullName] = useState('');
@@ -41,8 +39,6 @@ const SignUp = () => {
   };
 
   return (
-    <>
-    <Header></Header>
     <div className="flex justify-center items-center h-screen rounded-sm bg-gray-200">
       <form className="bg-white p-6 rounded shadow-md w-96" onSubmit={handleSubmit}>
         <h2 className="text-2xl mb-4 pb-6 font-bold">Register Here</h2>
@@ -83,8 +79,6 @@ const SignUp = () => {
         </button>
       </form>
     </div>
-    <Footer></Footer>
-    </>
   );
 };
 

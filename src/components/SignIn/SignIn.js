@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
 
 function SignIn(){
 
@@ -22,12 +20,7 @@ function SignIn(){
         console.log('Password:', password);
       };
 
-
-
-
       return (
-        <>
-        <Header></Header>
         <div className="flex justify-center items-center h-screen bg-gray-100">
           <form className="bg-white p-8 rounded shadow-md w-96" onSubmit={handleSubmit}>
             <h2 className="text-2xl font-semibold mb-4">Login</h2>
@@ -56,8 +49,6 @@ function SignIn(){
             </button>
           </form>
         </div>
-     <Footer></Footer>
-    </>
     );
 }
 
