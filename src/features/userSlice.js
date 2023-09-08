@@ -1,10 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import userApi from "../utilities/apiCaller";
 
-
-// export const signInAsync = createAsyncThunk();
-
-
 export const resetPasswordAsync = createAsyncThunk(
     "SignIn/forgotpassword", 
     async (userData,{ rejectWithValue }) => {
@@ -23,12 +19,6 @@ export const resetPasswordAsync = createAsyncThunk(
         }
 }
 );
-
-// const initialState = {
-//     user: {},
-//     status: "idle",
-//     error: null,
-// }
 
 export const userSlice=createSlice({
     name:"user",

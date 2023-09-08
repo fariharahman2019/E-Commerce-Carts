@@ -2,7 +2,6 @@ import axios from "axios";
 import { api } from "../configs";
 
 class userApi {
-
   resetPassword(data) {
       let response =  axios.post(`${api}/SignIn/forgotPassword`,
       {
@@ -13,7 +12,6 @@ class userApi {
       return response;
   }
 }
-
 
 const config = {
   headers: {
@@ -48,6 +46,5 @@ export const privatePut = async (endpoint, token, body) => {
   const response = await axios.put(`${api}${endpoint}`, body, config);
   return response.data;
 };
-
 // eslint-disable-next-line import/no-anonymous-default-export
 export default new userApi();
