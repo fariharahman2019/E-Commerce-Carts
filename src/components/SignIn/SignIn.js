@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-// import { FaRegEnvelope} from 'react-icons/fa';
-// import { MdLockOutline } from 'react-icons/md';
-// import { Link, useNavigate } from 'react-router-dom';
-// import { useSelector } from "react-redux";
-// import { selectUser } from "../../features/userSlice";
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
 
@@ -31,8 +26,6 @@ function SignIn(){
 
 
       return (
-
-
         <>
         <Header></Header>
         <div className="flex justify-center items-center h-screen bg-gray-100">
@@ -58,8 +51,7 @@ function SignIn(){
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
-            >
+              className="w-full bg-red-800 text-white py-2 rounded hover:bg-red-900">
               Login
             </button>
           </form>
