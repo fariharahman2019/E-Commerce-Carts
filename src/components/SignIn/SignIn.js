@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 function SignIn(){
 
@@ -41,6 +42,9 @@ function SignIn(){
                 value={password}
                 onChange={handlePasswordChange}
               />
+            </div>
+            <div className='flex w-64 justify-center mb-5 mt-1 pt-2'>
+              <p className="text-xs text-center text-black font-bold">Already a Member? <span className="underline md:underline-offset-4"><Link to="/SignIn"> Sign In </Link></span></p>
             </div>
             <button
               type="submit"
