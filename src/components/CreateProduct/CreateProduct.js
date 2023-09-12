@@ -71,13 +71,13 @@ function CreateProduct() {
           <div class="grid grid-cols-2 gap-4">
         <div>
             <label for="input1" class="block text-gray-600 font-semibold mb-1">Price</label>
-            <input type="text" id="input1" class="w-full p-2 border rounded-md focus:outline-none focus:border-blue-400" />
+            <input type="text" id="input1" class="border-gray-900 w-full p-2 border rounded-md focus:outline-none focus:border-blue-400" />
         </div>
         <div className='mt-7'>
         <select
             name="category"
             id="category"
-            className="w-full p-2 border rounded-md focus:outline-none focus:border-blue-400"
+            className="w-full p-2 border border-gray-900 rounded-md focus:outline-none focus:border-blue-400"
             value={product.category}
             onChange={handleInputChange}
           >
