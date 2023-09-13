@@ -1,9 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { privatePost } from "../utilities/apiCaller";
 
-
-
-
 const initialState = {
     buy: [],
     isLoading: false,
@@ -13,15 +10,13 @@ const initialState = {
 
 export const createBuy = createAsyncThunk(
     'buy/createBuy', async ({ data,userToken}, { rejectWithValue }) => {
-
+    
         try {
             const buy = await privatePost('/create/buy',userToken, data);
             return buy;
         } catch (err) {
             return rejectWithValue(err);
         }
-
-
     });
 
 const createBuySlice = createSlice({
